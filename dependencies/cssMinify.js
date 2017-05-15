@@ -1,7 +1,4 @@
-/**
- * @description：
- * @author: maoyh@corp.netease.com
- */
+
 'use strict';
 var through = require('through2');
 var CleanCSS = require('clean-css');

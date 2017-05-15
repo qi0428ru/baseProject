@@ -1,7 +1,4 @@
-/**
- * @description：
- * @author: maoyh@corp.netease.com
- */
+
 'use strict';
 var path = require('path');
 var webpack = require('webpack');
@@ -38,7 +35,6 @@ var getConfig = function(env) {
         cache: true,
         context: path.join(process.cwd(), ''),
         entry: {
-            'common': ['./public/scripts/pages/common.js'],
             'index': ['./public/scripts/pages/index.js']
         },
         output: {

@@ -1,7 +1,4 @@
-/**
-* @description：配置文件
-* @author: maoyh@corp.netease.com
-*/
+
 'use strict';
 module.exports = {
     dist: './public/dist/',

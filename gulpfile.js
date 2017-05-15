@@ -10,17 +10,13 @@ var revReplace = require("gulp-rev-replace");
 var del = require('del');
 var gls = require('gulp-live-server');
 var webpack = require("webpack");
-var gulpIf = require('gulp-if');
-var livereload = require('gulp-livereload');
 var devConf = require('./dependencies/conf.js');
 var spriteConfig = require('./dependencies/sprite.js');
 var webpackConfig = require('./dependencies/webpack.js');
 var cssMinify = require('./dependencies/cssMinify.js');
 
 var env = 'development';
-var CONFIG = {
-   isDebug: false
-};
+
 var runServer = function() {
     var server = gls('app.js', {
         env: {
@@ -65,7 +61,6 @@ gulp.task('copy:img', function(cb) {
 });
 gulp.task('dev', function() {
     var conf = devConf.watch;
-    CONFIG['isDebug'] = true;
     runSequence(['common'], function() {
         var server = runServer();
         gulp.watch(conf.restart, function(file) {
