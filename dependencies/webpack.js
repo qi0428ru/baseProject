@@ -97,7 +97,6 @@ var getConfig = function(env) {
                 }
             }]
         },
-        devtool: isDev ? 'cheap-source-map' : '',
         resolve: {
             extensions: ['.js', '.jsx', 'vue', '.scss'],
             modules: [path.resolve('./public/scripts/'), path.resolve('./public/scss/'), path.resolve('./node_modules/')],
