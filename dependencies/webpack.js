@@ -44,7 +44,7 @@ var getConfig = function(env) {
         },
         externals: {},
         module: {
-            loaders: [{
+            rules: [{
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loader: "url-loader",
                 query: {}
